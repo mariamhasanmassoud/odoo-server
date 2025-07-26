@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="pos_partner_input_number.PartnerListScreen" t-inherit="point_of_sale.PartnerListScreen"
+       t-inherit-mode="extension"
+       owl="1">
+        <xpath expr="//input[@t-ref='search-word-input-partner']" position="replace">
+                                <input class="flex-grow-1 w-auto h-100 border-0 p-2 me-4" type="number"
+                                       autofocus="autofocus" t-ref="search-word-input-partner"
+                                       placeholder="Search Customers..." size="1" t-on-keyup="updatePartnerList"/>
+        </xpath>
+    </t>
+</templates>
